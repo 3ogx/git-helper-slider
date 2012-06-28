@@ -76,46 +76,60 @@
                 <h3>
                     快速使用
                 </h3>
-                <ul class="build">
-                    <li><span class="doller">$</span> git clone <br /></li>
-                    <li><span class="doller">$</span> git init <br /></li>
-                    <li><span class="doller">$</span> git add .<br /></li>
-                    <li><span class="doller">$</span> git commit<br /></li>
-                    <li><span class="doller">$</span> git status<br /></li>
-                    <li><span class="doller">$</span> git diff<br /></li>
-                </ul>
+                    <p><span class="doller">$</span> git clone <br /></p>
+                    <p><span class="doller">$</span> git init <br /></p>
+                    <p><span class="doller">$</span> git add .<br /></p>
+                    <p><span class="doller">$</span> git commit<br /></p>
+                    <p><span class="doller">$</span> git status<br /></p>
+                    <p><span class="doller">$</span> git diff<br /></p>
             </article>
 
             <article>
-                <h3>提交</h3>
+                <h3>快速使用</h3>
                 <p>
                     <span class="doller">$</span> git push<br />
                     <span class="doller">$</span> git pull<br />
                     <span class="doller">$</span> git log<br />
                     <span class="doller">$</span> git reset<br />
                     <span class="doller">$</span> git show<br />
+                    <span class="doller">$</span> git mv<br />
+                </p>
+            </article>
+
+            <article>
+                <h3>快速使用</h3>
+                <p>
+                    <span class="doller">$</span> git rm<br />
+                    <span class="doller">$</span> git tag<br />
+                    <span class="doller">$</span> git stash<br />
+                    <span class="doller">$</span> git reset<br />
                 </p>
             </article>
 
             <article>
                 <h3>
-                    branches
+                    分支 branches
                 </h3>
                 <p>
                     <span class="doller">$</span> git branch dev
                 </p>
                 <p>
-                    <span class="doller">$</span> git co -b dev
+                    <span class="doller">$</span> git checkout -b dev
                 </p>
+                <p>
+                    <span class="doller">$</span> git checkout dev
+                </p>
+                <p>
+                    <span class="doller">$</span> git push origin dev:dev
+                </p>
+                <p><span class="doller">$</span> git branch -d <span class="red">dev</span></p>
+                <p><span class="doller">$</span> git push origin :dev</p>
             </article>
 
             <article>
                 <h3>
-                    merge branch
+                    合并分支 merge branch
                 </h3>
-                <p>
-                    current branch <span class="red">dev</span>
-                </p>
                 <p>
                     <span class="doller">$</span> git checkout <span class="red">master</span>
                 </p>
@@ -126,118 +140,45 @@
 
             <article>
                 <h3>
-                    合并解决冲突
+                    标签 tag
                 </h3>
-                <ul class="build">
-                    <li>
-                        This is an example of a list
-                    </li>
-                    <li>
-                        The list items fade in
-                    </li>
-                    <li>
-                        Last one!
-                    </li>
-                </ul>
-
-                <div class="build">
-                    <p>Any element with child nodes can build.</p>
-                    <p>It doesn't have to be a list.</p>
-                </div>
-            </article>
-
-            <article class='smaller'>
-                <h3>
-                    Slide with bullet points (small font)
-                </h3>
-                <ul>
-                    <li>
-                        Use this template to create your presentation
-                    <li>
-                        Use the provided color palette, box and arrow graphics, and
-                        chart styles
-                    <li>
-                        Instructions are provided to assist you in using this
-                        presentation template effectively
-                    <li>
-                        At all times strive to maintain Google's corporate look and feel
-                </ul>
+                <p><span class="doller">$</span> git tag -a <span class="red">tag-name</span> -m <span class="red">"message"</span></p>
+                <p><span class="doller">$</span> git push <span class="red">--tag</span></p>
+                <p><span class="doller">$</span> git tag -d <span class="red">tag-name</span></p>
             </article>
 
             <article>
                 <h3>
-                    Slide with a table
+                    git submodule
                 </h3>
-
-                <table>
-                    <tr>
-                        <th>
-                            Name
-                        <th>
-                            Occupation
-                            <tr>
-                                <td>
-                                    Luke Mahé
-                                <td>
-                                    V.P. of Keepin’ It Real
-                                    <tr>
-                                        <td>
-                                            Marcin Wichary
-                                        <td>
-                                            The Michael Bay of Doodles
-                </table>
-            </article>
-
-            <article class='smaller'>
-                <h3>
-                    Slide with a table (smaller text)
-                </h3>
-
-                <table>
-                    <tr>
-                        <th>
-                            Name
-                        <th>
-                            Occupation
-                            <tr>
-                                <td>
-                                    Luke Mahé
-                                <td>
-                                    V.P. of Keepin’ It Real
-                                    <tr>
-                                        <td>
-                                            Marcin Wichary
-                                        <td>
-                                            The Michael Bay of Doodles
-                </table>
+                <p><span class="doller">$</span> git submodule <span class="red">add</span></p>
+                <p><span class="doller">$</span> git submodule <span class="red">update --init --recursive</span></p>
             </article>
 
             <article>
                 <h3>
-                    Styles
+                    gitignore
                 </h3>
-                <ul>
-                    <li>
-                        <span class='red'>class="red"</span>
-                    <li>
-                        <span class='blue'>class="blue"</span>
-                    <li>
-                        <span class='green'>class="green"</span>
-                    <li>
-                        <span class='yellow'>class="yellow"</span>
-                    <li>
-                        <span class='black'>class="black"</span>
-                    <li>
-                        <span class='white'>class="white"</span>
-                    <li>
-                        <b>bold</b> and <i>italic</i>
-                </ul>
+                <p><span class="doller">$</span> ~/.gitignore </p>
+                <p><span class="doller">$</span> .DS_Store</p>
+                <p><span class="doller">$</span> !.gitignore</p>
+                <p><span class="doller">$</span> protected/config/main.php</p>
+                <p><span class="doller">$</span> protected/runtime/*</p>
+                <p><span class="doller">$</span> public/assets/*</p>
             </article>
 
             <article>
-                <h2>
-                    Segue slide
-                </h2>
+                <h3>alias</h3>
+                <p><span class="doller">$</span> git config --global alias.st <span class="red">status</span></p>
+                <p><span class="doller">$</span> git config --global alias.co <span class="red">checkout</span></p>
+                <p><span class="doller">$</span> git config --global alias.ci <span class="red">commit</span></p>
+                <p><span class="doller">$</span> git config --global alias.br <span class="red">branch</span></p>
+            </article>
+
+            <article>
+                <h3> git archive </h3>
+                <p><span class="doller">$</span> git archive -o /path/package.zip <span class="red">HEAD</span></p>
+                <p><span class="doller">$</span> git archive -o --format=zip HEAD <span class="red">| zip > /path/package.zip</span></p>
             </article>
 
             <article>
@@ -245,121 +186,11 @@
                     Slide with an image
                 </h3>
                 <p>
-                    <img style='height: 500px' src='images/example-graph.png'>
+                    <img style='height: 500px' src='images/git-branch-1.png'>
                 </p>
                 <div class='source'>
                     Source: Sergey Brin
                 </div>
-            </article>
-
-            <article>
-                <h3>
-                    Slide with an image (centered)
-                </h3>
-                <p>
-                    <img class='centered' style='height: 500px' src='images/example-graph.png'>
-                </p>
-                <div class='source'>
-                    Source: Larry Page
-                </div>
-            </article>
-
-            <article class='fill'>
-                <h3>
-                    Image filling the slide (with optional header)
-                </h3>
-                <p>
-                    <img src='images/example-cat.jpg'>
-                </p>
-                <div class='source white'>
-                    Source: Eric Schmidt
-                </div>
-            </article>
-
-            <article>
-                <h3>
-                    This slide has some code
-                </h3>
-                <section>
-                    <pre>
-                        &lt;script type='text/javascript'&gt;
-                        // Say hello world until the user starts questioning
-                        // the meaningfulness of their existence.
-                        function helloWorld(world) {
-                        for (var i = 42; --i &gt;= 0;) {
-                        alert('Hello ' + String(world));
-                        }
-                        }
-                        &lt;/script&gt;
-                        &lt;style&gt;
-                        p { color: pink }
-                        b { color: blue }
-                        u { color: 'umber' }
-                        &lt;/style&gt;
-                    </pre>
-                </section>
-            </article>
-
-            <article class='smaller'>
-                <h3>
-                    This slide has some code (small font)
-                </h3>
-                <section>
-                    <pre>
-                        &lt;script type='text/javascript'&gt;
-                        // Say hello world until the user starts questioning
-                        // the meaningfulness of their existence.
-                        function helloWorld(world) {
-                        for (var i = 42; --i &gt;= 0;) {
-                        alert('Hello ' + String(world));
-                        }
-                        }
-                        &lt;/script&gt;
-                        &lt;style&gt;
-                        p { color: pink }
-                        b { color: blue }
-                        u { color: 'umber' }
-                        &lt;/style&gt;
-                    </pre>
-                </section>
-            </article>
-
-            <article>
-                <q>
-                    The best way to predict the future is to invent it.
-                </q>
-                <div class='author'>
-                    Alan Kay
-                </div>
-            </article>
-
-            <article class='smaller'>
-                <q>
-                    A distributed system is one in which the failure of a computer
-                    you didn’t even know existed can render your own computer unusable.
-                </q>
-                <div class='author'>
-                    Leslie Lamport
-                </div>
-            </article>
-
-            <article class='nobackground'>
-                <h3>
-                    A slide with an embed + title
-                </h3>
-
-                <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-            </article>
-
-            <article class='nobackground'>
-                <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
-            </article>
-
-            <article class='fill'>
-                <h3>
-                    Full-slide embed with (optional) slide title on top
-                </h3>
-                <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
             </article>
 
             <article>
@@ -370,6 +201,7 @@
                 <ul>
                     <li>
                         <a href='http://www.google.com'>google.com</a>
+                        <a href='http://gitbook.liuhui998.com/'>http://gitbook.liuhui998.com/3_3.html</a>
                 </ul>
             </article>
 
